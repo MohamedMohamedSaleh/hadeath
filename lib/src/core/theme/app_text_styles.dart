@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 abstract final class AppTextStyles {
+  static const String fontFamily = 'Cairo';
+
   /// Applies one Arabic-friendly type family across both supported locales.
   static TextTheme from(ColorScheme colorScheme) {
-    final baseTheme = GoogleFonts.cairoTextTheme();
+    final baseTheme = Typography.material2021().black.apply(
+      fontFamily: fontFamily,
+      bodyColor: colorScheme.onSurface,
+      displayColor: colorScheme.onSurface,
+    );
+
     return baseTheme.copyWith(
       displaySmall: baseTheme.displaySmall?.copyWith(
         color: colorScheme.onSurface,
@@ -29,6 +35,9 @@ abstract final class AppTextStyles {
       bodyMedium: baseTheme.bodyMedium?.copyWith(
         color: colorScheme.onSurfaceVariant,
         height: 1.6,
+      ),
+      labelMedium: baseTheme.labelMedium?.copyWith(
+        color: colorScheme.onSurfaceVariant,
       ),
       labelLarge: baseTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
     );

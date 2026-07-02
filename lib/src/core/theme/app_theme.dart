@@ -59,6 +59,7 @@ abstract final class AppTheme {
     return ThemeData(
       useMaterial3: true,
       colorScheme: colorScheme,
+      fontFamily: AppTextStyles.fontFamily,
       scaffoldBackgroundColor: scaffoldBackground,
       textTheme: textTheme,
       appBarTheme: AppBarTheme(

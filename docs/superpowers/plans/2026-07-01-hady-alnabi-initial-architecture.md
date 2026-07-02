@@ -6,7 +6,7 @@
 
 **Architecture:** Compose the app from shared `app` and `core` modules plus presentation-only feature modules. GetIt owns router and Cubit creation, while a `StatefulShellRoute.indexedStack` owns the persistent four-tab scaffold.
 
-**Tech Stack:** Flutter, Dart, Material 3, flutter_bloc, bloc, get_it, go_router, equatable, intl, flutter_localizations, google_fonts, flutter_test
+**Tech Stack:** Flutter, Dart, Material 3, flutter_bloc, bloc, get_it, go_router, equatable, intl, flutter_localizations, flutter_test
 
 ---
 

@@ -28,6 +28,12 @@ Future feature Cubits should also expose one immutable state class, use enums fo
 
 When runtime locale switching is added, introduce a locale Cubit beside `ThemeCubit` and bind its state to `MaterialApp.router.locale`. The ARB and feature UI structure do not need to change.
 
+## Typography
+
+The app bundles the Cairo family from `assets/fonts/` and registers it in `pubspec.yaml`. `AppTextStyles` applies that local family through the shared `TextTheme`, so the app does not depend on the `google_fonts` package at runtime.
+
+Only the weights currently used by the theme are kept in the bundle: Regular 400, Medium 500, SemiBold 600, and Bold 700. This keeps Arabic typography consistent while trimming unused font files from the application size.
+
 ## Adding JSON and a Local Database
 
 Add data capabilities only inside the feature that needs them:
