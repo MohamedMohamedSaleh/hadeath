@@ -1,11 +1,11 @@
 {
-    "name": "hadeath",
-    "short_name": "hadeath",
+    "name": "Hady Al-nabi",
+    "short_name": "Hady Al-nabi",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#F8F5EF",
+    "theme_color": "#1F5E4A",
+    "description": "An Arabic-first Islamic Hadith application.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
